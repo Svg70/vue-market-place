@@ -162,21 +162,27 @@ export default {
         }
         @media screen and (max-width: 850px) {
           display: none;
-      }
+        }
       }
       
       &--lower-row {
         display: flex;
-        background-color: $gray-color;
+        justify-content: flex-end;
         height: 40px;
-        width: 100%;
+        width:100%;
+        margin-top: 20px;
+
+        @media screen and (max-width: 850px) {
+          margin-top: 0;
+        }
       }
     }
 
     &__search {
       display: flex;
       align-items: center;
-      width: 100%;
+      background-color: $gray-color;
+      width: calc(100% - 200px);
 
       &-categories {
         width: 200px;
@@ -189,7 +195,10 @@ export default {
       }
 
       &-button {
-        width: 30px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
       }
     }
 
