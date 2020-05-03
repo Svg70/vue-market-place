@@ -16,10 +16,12 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
+    "materialize-css": "^1.0.0",
     "nuxt": "^2.0.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "vue-bem-cn": "^1.1.1"
+    "vue-bem-cn": "^1.1.1",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

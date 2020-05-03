@@ -1,5 +1,11 @@
 module.exports = {
-  plugins: ['~/plugins/vue-bem-cn.js'],
+  
+  css: [
+    '~/assets/styles/main.scss',
+    '~node_modules/materialize-css/dist/css/materialize.css'
+  ],
+  
+  plugins: ['~/plugins/vue-bem-cn.js', '~/plugins/vuelidate.js'],
   /*
   ** Headers of the page
   */
