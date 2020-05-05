@@ -29,7 +29,7 @@
               {{ user }}
             </nuxt-link>
             <nuxt-link v-if="!isAuth" to="/login" :class="b('right-menu--upper-row-link')">Login</nuxt-link>
-            <nuxt-link v-if="isAuth" to="/" :class="b('right-menu--upper-row-link')">Log out</nuxt-link>
+            <nuxt-link v-if="isAuth" to="/login" :class="b('right-menu--upper-row-link')">Log out</nuxt-link>
           </div>
         </div> 
         <div :class="b('right-menu--lower-row')">
@@ -187,6 +187,7 @@ export default {
       &-categories {
         width: 200px;
         text-align: center;
+        cursor: pointer;
       }
       
       &-input {

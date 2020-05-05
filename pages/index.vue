@@ -11,27 +11,24 @@
 </template>
 
 <script>
-
+import { isIE } from '../utils/isIE'
+console.log('isIE', isIE)
 export default {
+
   components: {
 
   },
   directives: {
     isIe:{
       bind:(el, binding, vnode) => { 
-        vnode.context.isIE();
+        console.log(vnode)
+        isIE();
         el.innerHTML = 'fff';
       }
     }
   },
   methods: {
-    isIE() {
-      if (process.client) {
-        const userAgent = window.navigator.userAgent;
-        console.log(userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1 || userAgent.indexOf("Edge/") > -1)
-        return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1 || userAgent.indexOf("Edge/") > -1;
-      }
-    },
+
     setClass() {
       return 'classNmme'
     }
